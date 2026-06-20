@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Journey - Jaki & Eca</title>
+    <!-- FontAwesome untuk Icon Hati & Musik -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Romantis & Estetik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- KONTAINER UNTUK EFEK HUJAN HATI JATOH -->
+    <div class="hearts-container" id="hearts-container"></div>
+
+    <!-- SIDEBAR DASHBOARD ROMANTIS -->
+    <aside class="sidebar">
+        <div>
+            <div class="sidebar-brand">
+                <i class="fa-solid fa-heart brand-icon"></i>
+                <span>Our Space</span>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <button onclick="switchPage('home')" id="btn-home" class="nav-btn active">
+                    <i class="fa-solid fa-house-heart"></i> Home
+                </button>
+                <button onclick="switchPage('gallery')" id="btn-gallery" class="nav-btn">
+                    <i class="fa-solid fa-images"></i> Our Gallery
+                </button>
+                <button onclick="switchPage('playlist')" id="btn-playlist" class="nav-btn">
+                    <i class="fa-solid fa-music"></i> Our Playlist
+                </button>
+                <button onclick="switchPage('about')" id="btn-about" class="nav-btn">
+                    <i class="fa-solid fa-sparkles"></i> About Us
+                </button>
+            </nav>
+        </div>
+        
+        <div class="sidebar-footer">
+            Made with ❤️ for Us
+        </div>
+    </aside>
+
+    <!-- KONTEN UTAMA -->
+    <main class="main-content">
+        <!-- Top Navbar dengan Background Bermotif Love -->
+        <header class="top-navbar">
+            <h1 id="top-title" class="script-font">Welcome Home 💖</h1>
+            <div class="user-profile">
+                <span>Jaki & Eca Forever</span>
+                <div class="heart-pulse"><i class="fa-solid fa-heart"></i></div>
+            </div>
+        </header>
+
+        <!-- AREA ISI HALAMAN -->
+        <div class="container">
+            
+            <!-- ====== 1. PAGE HOME ====== -->
+            <section id="page-home" class="page-content block">
+                <!-- Countdown Box Romantis -->
+                <div class="love-countdown floating-card">
+                    <h2 class="script-font">Time We've Shared Together</h2>
+                    <p id="live-counter" class="days-count">Menghitung momen indah...</p>
+                </div>
+
+                <div class="stats-grid col-2">
+                    <button onclick="switchPage('playlist')" class="card stat-card interactive-card">
+                        <h3>Our Favorite Playlists</h3>
+                        <p class="stat-number text-pink">24 Songs</p>
+                        <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Lihat Playlist Musik</span>
+                    </button>
+                    
+                    <button onclick="switchPage('gallery')" class="card stat-card interactive-card">
+                        <h3>Memories Captured</h3>
+                        <p class="stat-number text-rose">150+ Photos</p>
+                        <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Lihat Foto Galeri</span>
+                    </button>
+                </div>
+
+                <div class="card full-card welcome-love floating-card">
+                    <h2 class="script-font">Welcome to Our Digital Home</h2>
+                    <p>Tempat kecil di internet yang khusus dibuat untuk menyimpan semua cerita, canda tawa, dan mimpi kita berdua. Jelajahi halaman kita masing-masing lewat menu di sebelah kiri ya!</p>
+                </div>
+            </section>
+
+            <!-- ====== 2. PAGE GALLERY ====== -->
+            <section id="page-gallery" class="page-content hidden">
+                <div class="card full-card">
+                    <div class="page-header">
+                        <div class="icon-box bg-blue animate-pop"><i class="fa-solid fa-images"></i></div>
+                        <div>
+                            <h2 class="script-font" style="font-size: 2.5rem; margin-bottom: 0;">Our Captured Moments ✨</h2>
+                            <p class="sub-title">Koleksi foto dan momen berharga kita berdua</p>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    
+                    <div class="gallery-premium-grid">
+                        <div class="photo-placeholder"><img src="1.jpeg" alt="Moment 1"><p class="photo-caption">Saling Menatap Cerita ❤️</p></div>
+                        <div class="photo-placeholder"><img src="2.jpeg" alt="Moment 2"><p class="photo-caption">Senyum Teduh di Ayunan 🌿</p></div>
+                        <div class="photo-placeholder"><img src="3.jpeg" alt="Moment 3"><p class="photo-caption">Keseruan Bareng Ramai ✨</p></div>
+                        <div class="photo-placeholder"><img src="4.jpeg" alt="Moment 4"><p class="photo-caption">Pose Duckface Gemas 😗</p></div>
+                        <div class="photo-placeholder"><img src="5.jpeg" alt="Moment 5"><p class="photo-caption">Ekspresi Ceria Kita 😬</p></div>
+                        <div class="photo-placeholder"><img src="6.jpeg" alt="Moment 6"><p class="photo-caption">Polaroid Memory Frame 📸</p></div>
+                        <div class="photo-placeholder"><img src="7.jpeg" alt="Moment 7"><p class="photo-caption">Bersandar Manis 🥰</p></div>
+                        <div class="photo-placeholder"><img src="8.jpeg" alt="Moment 8"><p class="photo-caption">Pose Andalan Berdua ✌️</p></div>
+                        <div class="photo-placeholder"><img src="9.jpeg" alt="Moment 9"><p class="photo-caption">Tawa Lepas Penuh Kebahagiaan 💖</p></div>
+                        <div class="photo-placeholder"><img src="11.jpeg" alt="Moment 11"><p class="photo-caption">Muka Jelek Tetep Gemes 😜</p></div>
+                        <div class="photo-placeholder"><img src="12.jpeg" alt="Moment 12"><p class="photo-caption">Nongkrong Santai Berdua ☕</p></div>
+                        <div class="photo-placeholder"><img src="15.jpeg" alt="Moment 15"><p class="photo-caption">Sandaran Nyaman 🔒</p></div>
+                        <div class="photo-placeholder"><img src="16.jpeg" alt="Moment 16"><p class="photo-caption">Tertawa Lebar Bareng Teman ✌️</p></div>
+                        <div class="photo-placeholder"><img src="17.jpeg" alt="Moment 17"><p class="photo-caption">Filter Dramatis Aesthetic 🎬</p></div>
+                        <div class="photo-placeholder"><img src="18.jpeg" alt="Moment 18"><p class="photo-caption">Ditatap Bikin Salting 🫠</p></div>
+                        <div class="photo-placeholder"><img src="19.jpeg" alt="Moment 19"><p class="photo-caption">Polaroid Keren Malem Hari 🎞️</p></div>
+                        <div class="photo-placeholder"><img src="20.jpeg" alt="Moment 20"><p class="photo-caption">Senyum Terbaik Spesial Buat Kamu 😁</p></div>
+                        <div class="photo-placeholder"><img src="21.jpeg" alt="Moment 21"><p class="photo-caption">Momen Berdua yang Hangat ✨</p></div>
+                        <div class="photo-placeholder"><img src="25.jpeg" alt="Moment 22"><p class="photo-caption">Tatapan Mata Kita 👀</p></div>
+                        <div class="photo-placeholder"><img src="26.jpeg" alt="Moment 23"><p class="photo-caption">Pose Lucu Berdua 🥸</p></div>
+                        <div class="photo-placeholder"><img src="27.jpeg" alt="Moment 24"><p class="photo-caption">Momen Seru Lainnya 📸</p></div>
+                        <div class="photo-placeholder"><img src="28.jpeg" alt="Moment 25"><p class="photo-caption">Cerita di Balik Lensa 🎬</p></div>
+                        <div class="photo-placeholder"><img src="29.jpeg" alt="Moment 26"><p class="photo-caption">Selalu Nyaman Bersamamu 💖</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====== 3. PAGE PLAYLIST ====== -->
+            <section id="page-playlist" class="page-content hidden">
+                <div class="card full-card">
+                    <div class="page-header">
+                        <div class="icon-box bg-pink animate-pop"><i class="fa-solid fa-music"></i></div>
+                        <div>
+                            <h2 class="script-font" style="font-size: 2.5rem; margin-bottom: 0;">Our Playlist Music</h2>
+                            <p class="sub-title">Lagu-lagu yang selalu mengingatkan aku tentang kita</p>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    
+                    <p class="love-letter">🎵 "Music speaks what cannot be expressed soothes the mind and gives it rest." Berikut lagu favorit kita berdua!</p>
+                    <audio id="audio-player" onplay="startVinyl()" onpause="stopVinyl()" onended="stopVinyl()"></audio>
+
+                    <div class="playlist-container" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 30px; flex-wrap: wrap;">
+                        <div class="songs-list" style="flex: 12; min-width: 280px;">
+                            <ul class="love-list" style="padding-left: 0; list-style: none;">
+                                <li class="song-item">
+                                    <span><strong>Until I Found You</strong> - Stephen Sanchez</span>
+                                    <button onclick="playSong('YTDown_YouTube_Stephen-Sanchez-Until-I-Found-You-Offici_Media_GxldQ9eX2wo_001_1080p.mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                                <li class="song-item">
+                                    <span><strong>TRUST ISSUE</strong> - DRAKE</span>
+                                    <button onclick="playSong('Drake - Trust Issues.mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                                <li class="song-item">
+                                    <span><strong>Justine Skye FT Tyga</strong> - collide</span>
+                                    <button onclick="playSong('Justine Skye ft Tyga - Collide (Official Music Video).mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                                <li class="song-item">
+                                    <span><strong>REMINDER</strong> - The weeknd</span>
+                                    <button onclick="playSong('The Weeknd - Reminder (Official Video) (3).mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                                <li class="song-item">
+                                    <span><strong>Talking To The Moon</strong> - Bruno Mars</span>
+                                    <button onclick="playSong('vidssave.com Bruno Mars - Talking To The Moon (Official Lyric Video) 360P.mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                                <li class="song-item">
+                                    <span><strong>That's what I Like</strong> - Bruno Mars</span>
+                                    <button onclick="playSong('vidssave.com Bruno Mars - That’s What I Like [Official Music Video] 480P.mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                                <li class="song-item">
+                                    <span><strong>Into It</strong> - Chase Atlantic</span>
+                                    <button onclick="playSong('vidssave.com Chase Atlantic - _Into It_ (Official Audio) 144P.mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                                <li class="song-item">
+                                    <span><strong>Under The Influence</strong> - Chris Brown</span>
+                                    <button onclick="playSong('vidssave.com Chris Brown - Under The Influence (Official Video) 480P.mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                                <li class="song-item">
+                                    <span><strong>Flat Line</strong> - Bruno Mars</span>
+                                    <button onclick="playSong('vidssave.com Flatline 1080P.mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                                <li class="song-item">
+                                    <span><strong>Start A War</strong> - JENNIE</span>
+                                    <button onclick="playSong('vidssave.com JENNIE - start a war (Official Lyric Video) 480P.mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                                <li class="song-item">
+                                    <span><strong>Die For You</strong> - The Weeknd</span>
+                                    <button onclick="playSong('vidssave.com The Weeknd, Ariana Grande - Die For You (Remix _ Lyric Video) 144P.mp4', this)" class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="vinyl-wrapper" style="flex: 8; display: flex; justify-content: center; min-width: 250px; position: sticky; top: 100px;">
+                            <div id="vinyl-record" class="vinyl">
+                                <div class="vinyl-groove-1"></div>
+                                <div class="vinyl-groove-2"></div>
+                                <div class="vinyl-center-label">
+                                    <i class="fa-solid fa-heart center-heart"></i>
+                                </div>
+                                <div class="vinyl-center-hole"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====== 4. PAGE ABOUT US ====== -->
+            <section id="page-about" class="page-content hidden">
+                <div class="card full-card text-center-all">
+                    <h2 class="script-font" style="font-size: 3rem;">About Us</h2>
+                    <p style="max-width: 600px; margin: 10px auto 40px auto; color: #4b5563;">Dua orang berbeda karakter yang dipertemukan takdir untuk saling melengkapi dan berjalan di rute yang sama.</p>
+                    
+                    <div class="team-grid">
+                        <div class="team-card dynamic-boy profile-glow-blue">
+                            <div class="avatar bg-blue">J</div>
+                            <div>
+                                <h4>Jaki</h4>
+                                <p class="role">The Guard & Developer 🧑‍💻</p>
+                            </div>
+                        </div>
+                        <div class="team-card dynamic-girl profile-glow-pink">
+                            <div class="avatar bg-pink">E</div>
+                            <div>
+                                <h4>Eca</h4>
+                                <p class="role">The Sunshine & Designer 🌸</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="romantic-quote animated-pulse-text">"In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine."</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
