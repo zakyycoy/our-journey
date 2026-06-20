@@ -561,3 +561,130 @@ body {
 /* LOGIC NAV SWITCH DISPLAY */
 .page-content { display: none; }
 .page-content.block { display: block; }
+/* ===================================================
+   RESPONSIVE MOBILE STYLES (UNTUK TAMPILAN HP)
+   =================================================== */
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column; /* Mengubah susunan dari samping ke bawah-atas */
+        overflow-y: auto;       /* Izinkan scroll pada seluruh body di HP */
+        height: auto;
+    }
+
+    /* Mengubah Sidebar Kiri Menjadi Top/Bottom Menu di HP */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        border-right: none;
+        border-bottom: 1px solid #fecdd3;
+    }
+
+    .sidebar-brand {
+        padding: 12px 20px;
+        font-size: 1.3rem;
+        justify-content: center;
+    }
+
+    .sidebar-menu {
+        display: flex;         /* Membuat menu tombol berjejer ke samping */
+        overflow-x: auto;      /* Jika tombol kepanjangan, bisa di-scroll ke samping */
+        padding: 8px;
+        gap: 8px;
+        white-space: nowrap;   /* Mencegah tombol turun ke bawah */
+        background-color: #ffe4e6;
+    }
+
+    .nav-btn {
+        margin-bottom: 0;
+        padding: 10px 14px;
+        font-size: 0.9rem;
+        border-radius: 12px;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .nav-btn:hover {
+        transform: none; /* Matikan efek geser ke kanan di HP */
+    }
+
+    .sidebar-footer {
+        display: none; /* Sembunyikan footer sidebar di HP agar hemat ruang */
+    }
+
+    /* Penyesuaian Konten Utama */
+    .main-content {
+        overflow-y: visible;
+    }
+
+    .top-navbar {
+        position: relative;
+        padding: 16px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    /* Penyesuaian Grid dan Card di HP */
+    .stats-grid.col-2 {
+        grid-template-columns: 1fr; /* Menjadikan 1 kolom ke bawah */
+        gap: 16px;
+    }
+
+    .love-countdown {
+        padding: 24px 16px;
+    }
+
+    .days-count {
+        font-size: 1.4rem; /* Memperkecil ukuran font tulisan waktu di HP */
+    }
+
+    /* Penyesuaian Tampilan Playlist & Vinyl di HP */
+    .playlist-container {
+        flex-direction: column-reverse; /* Putar susunan: Vinyl di atas, daftar lagu di bawah */
+        gap: 20px !important;
+        align-items: center;
+    }
+
+    .vinyl-wrapper {
+        position: relative !important;
+        top: 0 !important;
+        width: 100%;
+    }
+
+    .vinyl {
+        width: 180px;  /* Perkecil piringan hitam di layar HP */
+        height: 180px;
+    }
+
+    .vinyl-groove-1 { width: 140px; height: 140px; }
+    .vinyl-groove-2 { width: 100px; height: 100px; }
+
+    /* Penyesuaian Galeri Foto di HP */
+    .gallery-premium-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Di HP muat 2 foto sejajar */
+        gap: 12px;
+    }
+
+    .photo-placeholder {
+        padding: 8px;
+        border-radius: 16px;
+    }
+
+    .photo-placeholder img {
+        height: 180px; /* Sesuaikan tinggi foto di layar HP */
+        border-radius: 12px;
+        margin-bottom: 8px;
+    }
+
+    .photo-caption {
+        font-size: 0.8rem;
+    }
+}
